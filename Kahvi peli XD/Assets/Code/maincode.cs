@@ -68,15 +68,7 @@ public class maincode : MonoBehaviour {
         puruperclick_display.text = kahviperclick + " Per. click";
         autoclick_display.text = "auto click: " + time;
 
-
-        saveTimeStart += Time.deltaTime;
-        {
-            if (saveTimeStart >= saveTime)
-            {
-                saveTimeStart = 0.0f;
-                save();
-            }
-        }
+        save();
 
         //piste joka sekuntti
         timerStart += Time.deltaTime;
